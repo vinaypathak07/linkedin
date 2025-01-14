@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+	</style>
+</head>
+<body>
+	<header class="topbar-header">
+		<div class="topbar d-flex ai-center">
+			<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#0A66C2" class="mercado-match" width="24" height="24" focusable="false">
+				<path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+			</svg> -->
+		</div>
+	</header>
+	<main class="main-container">
+		<section class="main-section">
+			<section class="main-sub-section">
+				<aside class="aside-left">
+					<section class="short-profile">
+						<section class="aside-br-1 card p-2 m-b-1">
+							<header class="profile-theme">
+								<div class="profile-bgImg"></div>
+							</header>	
+							<div class="profile-img d-flex">
+								<img src="./assets/linkedin.png" width="80" heigth="80" style="border-radius: 50%;"/>
+							</div>
+							<main class="m-t-7">
+								<h3 class="align-center m-0 font-SSP-16 color-000000E6"> Vinay Pathak </h3>
+								<p class="font-SSP-12 align-center color-00000099 m-t-1 m-b-1">Software Engineer | Frontend at Shiprocket | Infosys</p>
+								<p class="font-SSP-12 align-center color-00000099">Gurgaon, India</p>
+							</main>
+						</section>
+						<section class="aside-br-1 card p-2">
+							<main>
+								<a class="d-flex jc-between profile-viewers" onclick="openProfileViewers()">
+									<span class="font-SSP-12 fw-600"> Profile Viewers </span> 
+									<span id="profileViewersCount" class="font-SSP-12 color-0a66c2">
+										56
+									</span>
+								</a>
+							</main>
+						</section>
+					</section>
+				</aside>
+				<section class="feeds-section">
+					<section class="create-post">
+						<div class="d-flex m-b-1">
+							<div class="d-flex b-DBDBDB br-50">
+								<img src="./assets/vinay-profile.jpeg" width="48" heigth="48" style="border-radius: 50%;"/>
+							</div>
+							<button class="bare-button button-hover d-flex ai-center br-35 w-100 m-l-08" onclick="openFeedModal()">
+								<span class="m-l-3 font-SSP-14 fw-600 color-000000-60">Start a post</span>
+							</button>
+						</div>
+						<div class="d-flex jc-between">
+							<button class="bare-button button-hover d-flex ai-center jc-center p-tb-07-lr-04 br-6px">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#378fe9" class="mercado-match" width="24" height="24" focusable="false">
+									<path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm1 13a1 1 0 01-.29.71L16 14l-2 2-6-6-4 4V7a1 1 0 011-1h14a1 1 0 011 1zm-2-7a2 2 0 11-2-2 2 2 0 012 2z"></path>
+								</svg>
+								<span class="font-SSP-14 fw-600 color-000000-60 m-l-1">Photo</span>
+							</button>
+							<button class="bare-button button-hover d-flex ai-center jc-center p-tb-07-lr-04 br-6px">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#5F9B41" class="mercado-match" width="24" height="24" focusable="false">
+									<path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm-9 12V8l6 4z"></path>
+								  </svg>
+								<span class="font-SSP-14 fw-600 color-000000-60 m-l-1">Video</span>
+							</button>
+							<button class="bare-button button-hover d-flex ai-center jc-center p-tb-07-lr-04 br-6px">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#C37D16" class="mercado-match" width="24" height="24" focusable="false">
+									<path d="M3 3v15a3 3 0 003 3h12a3 3 0 003-3V3zm13 1.75A1.25 1.25 0 1114.75 6 1.25 1.25 0 0116 4.75zm-8 0A1.25 1.25 0 116.75 6 1.25 1.25 0 018 4.75zM19 18a1 1 0 01-1 1H6a1 1 0 01-1-1V9h14zm-5.9-3a1 1 0 00-1-1H12a3.12 3.12 0 00-1 .2l-1-.2v-3h3.9v1H11v1.15a3.7 3.7 0 011.05-.15 1.89 1.89 0 012 1.78V15a1.92 1.92 0 01-1.84 2H12a1.88 1.88 0 01-2-1.75 1 1 0 010-.25h1a.89.89 0 001 1h.1a.94.94 0 001-.88z"></path>
+								  </svg>
+								<span class="font-SSP-14 fw-600 color-000000-60 m-l-1">Event</span>
+							</button>
+							<button class="bare-button button-hover d-flex ai-center jc-center p-tb-07-lr-04 br-6px">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#E16745" class="mercado-match" width="24" height="24" focusable="false">
+									<path d="M21 3v2H3V3zm-6 6h6V7h-6zm0 4h6v-2h-6zm0 4h6v-2h-6zM3 21h18v-2H3zM13 7H3v10h10z"></path>
+								  </svg>
+								<span class="font-SSP-14 fw-600 color-000000-60 m-l-1">Write Article</span>
+							</button>
+						</div>
+					</section>
+					<section>
+
+					</section>
+					<section id="posts-list-container" class="posts-list-container">
+						<!-- <section class="posts-list m-t-3"> -->
+							<main class="posts-list m-t-3">
+								<header class="d-flex ai-center">
+									<img src="./assets/profile_11.png" width="48" heigth="48" style="border-radius: 50%;" />
+									<div class="person-profile m-l-08">
+										<p class="profile-name font-SSP-14 fw-600 color-000000">Ryan Roslansky</p>
+										<p class="profile-desig font-SSP-12 fw-600 color-8F8F8F">SWE III @LinkedIn</p>
+										<p class="posts-time d-flex ai-center">
+											<span class="font-SSP-12 fw-600 color-8F8F8F">24m •</span>
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="#8F8F8F" class="mercado-match" width="16" height="16" focusable="false">
+												<path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+											  </svg> </span>
+										</p>
+									</div>
+								</header>
+								<article class="post-content m-t-1">
+									<!-- Here the text will be truncated if the length of text is greater than certain limit -->
+									<div class="pos-rel">
+										<p class="text-content font-SSP-14">
+											<span>
+												Discord has around 500 million registered users. Even if a person on average does 10
+											</span> 
+											<span>
+												messages a day, the number of messages in a year would be ~1.8 Billion. How and where
+											</span> 
+											<!-- <span>
+												does Discord store these many messages and how are they retrieved?
+											</span>  -->
+										</p>
+										<!-- conditional rendering of see more button  -->
+										<button role="button" class="bare-button see-more-btn" onclick="onSeeMore()">
+											<span class="font-SSP-14 color-8F8F8F link-underline">...see more</span>
+										</button>
+									</div>
+									<!-- Image Will be conditionally rendered  -->
+									<figure class="m-0 m-t-2">
+										<img src="./assets/linkedIn_posts.gif" loading="lazy" style="width:100%;height:100%"/>
+									</figure>
+									<!-- Reactions on the post  -->
+									<!-- Based on the count of reactions of that emoji  -->
+									<summary class="d-flex jc-between p-t-1 p-b-1 b-b-008">
+										<button class="bare-button d-flex ai-center p-0" onclick="openFeedModal()">
+											<!-- Images will be dynamically inserted and image following 1st image will have negative left margin -->
+											<img src="./assets/like.svg" width="18" height="18"/>
+											<img src="./assets/empathy.svg" style="margin:0 0 0 -4px" width="18" height="18"/>
+											<img src="./assets/interest.svg" style="margin:0 0 0 -4px"  width="18" height="18"/>
+											<img src="./assets/praise.svg" style="margin:0 0 0 -4px" width="18" height="18"/>
+											<img src="./assets/funny.svg" style="margin:0 0 0 -4px" width="18" height="18"/>
+											<img src="./assets/appreciation.svg" style="margin:0 0 0 -4px" width="18" height="18"/>
+											<!-- <span class="total-reactions font-SSP-12">
+												1988
+											</span> -->
+											<span class="no-reactions link-underline font-SSP-12 color-00000099 m-l-1">
+												Mohit Khatri and 1987 others
+											</span>
+										</button>
+										<div>
+											<button class="bare-button p-0">
+												<span class="comments link-underline font-SSP-12 color-00000099">
+													140 comments
+												</span>
+											</button>
+											<span class="font-SSP-12 color-00000099 p-02">
+												•
+											</span>
+											<button class="bare-button p-0">
+												<span class="reposts link-underline font-SSP-12 color-00000099">
+													7 reposts
+												</span>
+											</button>
+										</div>
+									</summary>
+									<footer class="d-flex jc-between p-t-05 p-t-05 p-b-0 p-b-0">
+										<section id="reactions-popup-container">
+											<div id="reactions-popup" class="reactions-popup reactions-popup--active">
+												<main id="emojiModalID" class="reactions-menu__reaction emoji-modal emoji-box-shadow p-l-1 p-r-1 p-t-0 p-b-0 d-flex">
+													<button class="bare-button reaction-emoji p-0 m-02">
+														<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 48 48" id="like-creation-large" data-supported-dps="48x48">
+															<g>
+															  <path fill="none" d="M0 0h48v48H0z"/>
+															  <path d="M25.39 22H10.13c-2 0-3.2 2.11-3.12 3.92a3.23 3.23 0 003.3 3h.57a2.75 2.75 0 00-2.69 2.84 2.84 2.84 0 002.62 2.83 2.83 2.83 0 001.18 5 2.9 2.9 0 00-.29 2 3 3 0 003 2.24h8.18a13.06 13.06 0 003.17-.41l5.13-1.5c.3-.09 4.74 0 6.74 0 3.57-.14 4.53-16.52 0-16.52 0 0-1.65.06-2 0-.16 0-.52-.68-1.41-1.64l-.08-.1c-1.3-1.41-2.78-3.23-3.82-4.26-2.53-2.48-4.63-4.61-6.09-7.84C23.8 9.83 23.71 9 22 9a2.77 2.77 0 00-2.38 2.9 27.06 27.06 0 00.38 2.85c.63 3.38 3.43 7.08 3.51 7.25" fill="#378fe9"/>
+															  <path d="M23.49 23H10.13c-2 0-3.21 1.19-3.13 3a3.22 3.22 0 003.31 3h.57a2.77 2.77 0 00-2.69 2.84 2.84 2.84 0 002.62 2.83v0a2.83 2.83 0 001.18 5 2.9 2.9 0 00-.29 2 3 3 0 003 2.24h8.18a13.06 13.06 0 003.17-.41l5.13-1.5c.3-.09 4.74 0 6.74 0 3.57-.14 4.53-16.52 0-16.52 0 0-1.65.06-2 0-.16 0-.52-.68-1.41-1.64l-.08-.1c-1.3-1.41-2.78-3.23-3.82-4.26-2.53-2.48-4.63-4.6-6.09-7.84C23.8 9.87 23.71 9 22 9a2.66 2.66 0 00-2.38 2.9 27.06 27.06 0 00.38 2.85c.63 3.38 3.43 8 3.51 8.21z" fill="none" stroke="#004182" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+															</g>
+														</svg>
+													</button>
+													<button class="bare-button reaction-emoji p-0 m-02">
+														<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 48 48" id="praise-creation-large" data-supported-dps="48x48">
+															<g>
+															  <path fill="none" d="M0 0h48v48H0z"/>
+															  <path d="M39.33 30.67l-1.6-1.2s-.66-6.35-1.82-7.58c-2.09-2.2-3.42-5.42-4.3-8.46-.55-1.88-.94-2.55-2.63-2.58a2.57 2.57 0 00-2.31 2.84 21.76 21.76 0 00.23 2.55 34.79 34.79 0 002 6.54l-.65-.39-15.44-11.74c-1.15-.87-2.81-1.26-3.93.24s-.22 2.89.93 3.75l8 6 2.39 1.81-12.79-9.61c-1.15-.87-2.81-1.26-3.94.24s-.21 2.92.93 3.75l8 6 4.8 3.6-10.4-7.79c-1.15-.87-2.81-1.26-3.94.24s-.21 2.89.94 3.75l8 6 4 3-8-6c-1.15-.87-2.78-1.29-3.86.14s-.29 3 .86 3.86l14.54 11a9.77 9.77 0 007.41 1.8c.81.59 2.4 1.8 2.4 1.8a27.46 27.46 0 005.59-5.8 41 41 0 004.59-7.76z" fill="#49992a"/>
+															  <path d="M29.73 23.48l-2.41-1.81" fill="#93d870"/>
+															  <path d="M39.21 31l.12-.28" fill="none" stroke="#43722b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+															  <path d="M37.6 28.4c-.25-1.87-.41-7.47-1.27-8.38-2.09-2.21-3.84-3.55-4.72-6.59-.55-1.88-.94-2.55-2.63-2.58a2.57 2.57 0 00-2.31 2.84 21.76 21.76 0 00.23 2.55 43.79 43.79 0 002 6.92L12.81 11c-1.15-.86-2.81-1.25-3.93.25s-.22 2.88.93 3.75l8 6 2.39 1.8-12.79-9.59c-1.15-.86-2.81-1.25-3.94.25s-.21 2.88.93 3.75l8 6 4.8 3.61L6.8 19c-1.15-.86-2.81-1.25-3.94.25s-.21 2.89.94 3.75l8 6 4 3-8-6c-1.15-.86-2.78-1.29-3.86.15s-.29 3 .86 3.85l14.53 10.68a9.77 9.77 0 007.41 1.8" fill="none" stroke="#165209" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+															  <path d="M29.73 23.48l-2.41-1.81" fill="none" stroke="#43722b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+															  <path d="M45.93 31.87l-1.6-1.2s-.66-6.36-1.82-7.58a21 21 0 01-4.3-8.46c-.55-1.88-.94-2.55-2.63-2.58a2.56 2.56 0 00-2.31 2.83 21.76 21.76 0 00.23 2.55c.63 3.3 1.31 6 1.39 6.16l-15.24-11.4c-1.15-.87-2.81-1.26-3.94.24s-.22 2.89.93 3.75l8 6L27 24l-12.76-9.62c-1.15-.86-2.81-1.25-3.93.25s-.22 2.88.93 3.75l8 6L24 28l-10.36-7.82c-1.15-.87-2.82-1.25-3.94.24s-.22 2.89.93 3.76l8 6 4 3-8-6c-1.15-.86-2.79-1.29-3.87.15s-.29 3 .86 3.85l14.31 10.7c2.53 1.87 7.07 2.12 7 2.12a21.45 21.45 0 002.81 1.47A11.38 11.38 0 0042.93 41a17 17 0 003-9.13z" fill="#6dae4f"/>
+															  <path d="M36.33 24.67l-2.41-1.8" fill="#93d870"/>
+															  <path d="M12 1.65l.79 3.52M23.2 6l-2.94 2M18.68 1l-2.15 5.6M45.77 31.88a7.5 7.5 0 01-1.62-2.66c-.18-.75-.23-1.53-.37-2.29-.22-1.17-.41-2.93-1.27-3.84a21 21 0 01-4.3-8.46c-.55-1.88-.94-2.55-2.63-2.58a2.56 2.56 0 00-2.31 2.83 21.76 21.76 0 00.23 2.55c.63 3.3 1.31 6 1.39 6.16l-15.24-11.4c-1.15-.87-2.81-1.26-3.94.24s-.22 2.89.93 3.75l8 6L27 24l-12.76-9.62c-1.15-.86-2.81-1.25-3.93.25s-.22 2.88.93 3.75l8 6L24 28l-10.36-7.82c-1.15-.87-2.82-1.25-3.94.24s-.22 2.89.93 3.76l8 6 4 3-8-6c-1.15-.86-2.79-1.29-3.87.15s-.29 3 .86 3.85l14.31 10.7a9.65 9.65 0 004 1.75c.64.12 1.32.18 2.07.32a9.93 9.93 0 013.08 1 3 3 0 002.15.17 13.23 13.23 0 006.26-4.59 12.75 12.75 0 002.48-7 2.92 2.92 0 00-.2-1.65z" fill="none" stroke="#165209" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+															</g>
+														  </svg>					  
+													</button>
+													<button class="bare-button reaction-emoji p-0 m-02">
+														<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 48 48" id="support-creation-large" data-supported-dps="48x48">
+															<path d="M14 32h-.69c-.79-.29-4.82-1.83-7.53-2.59a.86.86 0 01-.63-.73 2.4 2.4 0 01.37-1.77 1.4 1.4 0 011.19-.58 2.06 2.06 0 01.7.12 5.71 5.71 0 011.49.87l.19.15 1.25.87c.46.33.87.61 1.16.83l2.92 1.19c.39.18 2 .92 2 1.34s-1.86.37-2.25.38z" fill="#9983b1"/>
+															<path d="M42.75 44.52a74.76 74.76 0 01-11.84-1.23h-.21a67.24 67.24 0 01-8.77-1.82c-2.56-.77-5.08-1.77-7.52-2.73l-1.09-.43c-2.31-.9-4.19-1.66-5.9-2.39l-.64-.27a24.09 24.09 0 01-3-1.41c-1.33-.78-1.74-1.78-1.19-3v-.09a1.93 1.93 0 012-1.15h.11a5.61 5.61 0 01.58 0c2.12.23 8.27 2.57 9.48 3l4 .14h.1l9 .31c-.7-.64-2.45-1.75-6.75-2.86-.82-.21-1.56-.45-1.73-1a2.38 2.38 0 01.78-2.54 3.18 3.18 0 011.84-.42 9.74 9.74 0 012.28.27c.46.12.83.24 1.19.35a13.5 13.5 0 002.88.65A31 31 0 0133 29c5 1.36 6 3.87 6.59 5.38-.19-.62 0-.16.1-.39l.14-.2h.77c.86 0 2.5-.09 2.51-.09a.85.85 0 01.85.63c1.71 6.23-.64 9.69-.74 9.83a.66.66 0 01-.48.33z" fill="#bba9d1"/>
+															<path d="M14.63 11.35a5 5 0 00-7.13-.09l-.09.09a5.24 5.24 0 000 7.34l7.79 7.9 7.8-7.9a5.24 5.24 0 000-7.34 5.06 5.06 0 00-3.61-1.53 5 5 0 00-3.6 1.53l-.57.58z" fill="#df704d" fill-rule="evenodd"/>
+															<path d="M43.65 34.32a7.14 7.14 0 011.48 5 10.7 10.7 0 01-2.28 5.29c-.41.4-15.19-1.48-18.65-2.16S4.05 34.43 3.41 34s-.7-3.12 1.13-3.69 5.86 2.15 9.53 2.75a105.12 105.12 0 0012.68.94c2.48 0-2.68-2.16-3.9-2.64s-3.2-.87-3.61-2.16.92-2.24 2-2.24a30.41 30.41 0 015.89 1.48A19.6 19.6 0 0135 29.83a9.16 9.16 0 014.67 4.49c.33.68 3.62-.32 3.98 0z" fill="none" stroke="#493d57" stroke-width="2"/>
+															<path d="M5.47 30.17c-.93-2 .22-3.17 1.58-3.17s2.4 1.48 4.37 2.83a74.82 74.82 0 006.89 3.87" fill="none" stroke="#493d57" stroke-width="2"/>
+															<path d="M14.36 10.63a5.48 5.48 0 00-7.74.06 5.63 5.63 0 00-.08 7.83L15 27l8.43-8.49a5.62 5.62 0 001.52-4.86 5.54 5.54 0 00-3-4.08A5.22 5.22 0 0019.49 9a5.48 5.48 0 00-3.88 1.65l-.64.61z" fill="none" stroke="#77280c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+															<path fill="none" d="M0 0h48v48H0z"/>
+														  </svg>
+													</button>
+													<button class="bare-button reaction-emoji p-0 m-02">
+														  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 48 48" id="empathy-creation-large" data-supported-dps="48x48">
+															<g>
+															  <path fill="none" d="M0 0h48v48H0z"/>
+															  <path d="M22.9 14.9a9.91 9.91 0 10-14 14L24 44l15.1-15.07a10 10 0 00-2.67-16 9.55 9.55 0 00-4.33-1 9.84 9.84 0 00-7 2.93L24 16z" fill="#df704d" fill-rule="evenodd"/>
+															  <path d="M22.9 14.88a9.88 9.88 0 00-14 13.94L24 43.8l15.1-15A9.86 9.86 0 0036.43 13a9.55 9.55 0 00-4.33-1h0a9.83 9.83 0 00-7 2.92L24 16z" fill="none" stroke="#77280c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+															</g>
+														  </svg>
+													</button>
+													<button class="bare-button reaction-emoji p-0 m-02">
+														<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 48 48" id="interest-creation-large" data-supported-dps="48x48">
+															<g>
+															  <path fill="none" d="M0 0h48v48H0z"/>
+															  <path d="M27 44h-6a2 2 0 01-2-2v-5h10v5a2 2 0 01-2 2z" fill="#c07800"/>
+															  <path d="M21 37l8 .07a11.25 11.25 0 01.09-3.57 6.61 6.61 0 01.78-1.63 5.16 5.16 0 01.63-.69l.14-.12A11.75 11.75 0 0035 22.17a11 11 0 00-22 0v.06a11.43 11.43 0 004.13 8.66 10.73 10.73 0 011.77 2.79 9.47 9.47 0 01.8 3.08l.3.24" fill="#f5bb5c"/>
+															  <path d="M12 5.82L14.42 9M36 5.82L33.58 9M24 2v4.77" fill="none" stroke="#5d3b01" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.91"/>
+															  <path d="M27 44h-6a2.21 2.21 0 01-2-2.1V37h10v4.9a2.21 2.21 0 01-2 2.1z" fill="none" stroke="#5d3b01" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+															  <path d="M29 38c0-3.63.41-4.47.41-4.47a6.34 6.34 0 011.89-3 12.84 12.84 0 001.28-1.38 11.86 11.86 0 001.81-3.24 11.39 11.39 0 00.65-3.7v-.06A11.1 11.1 0 0024 11h0a11.09 11.09 0 00-11 11.17v.06a11.39 11.39 0 00.65 3.7 11.86 11.86 0 001.81 3.24 12.84 12.84 0 001.28 1.38 6.34 6.34 0 011.89 3s.37.84.37 4.45" fill="none" stroke="#5d3b01" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+															</g>
+														  </svg>
+													</button>
+													<button class="bare-button reaction-emoji p-0 m-02">
+														<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 48 48">
+															<circle cx="24" cy="27" r="18" style="fill: #79deee; stroke: #104e58; stroke-width: 2px;"/>
+															<path d="M21.68,22.33c-2.58-2.25-6.55-1.7-8.43,1.16l-.22,.33,.82,.84,.47-.29c2.04-1.26,4.5-1.62,6.81-1.01l.55-1.03Z" style="fill: #104e58;"/>
+															<path d="M26.68,22.06l-.32,.24,.5,1.07c2.5-.59,5.14-.12,7.29,1.29l.85-.79c-1.66-3-5.57-3.84-8.32-1.8Z" style="fill: #104e58;"/>
+															<path d="M29,16.08c1.11-.07,3.66,.25,5,2.12" style="fill: none; stroke: #104e58; stroke-linecap: round; stroke-width: 2px;"/>
+															<path d="M18,16.08c-1.11-.07-3.66,.25-5,2.12" style="fill: none; stroke: #104e58; stroke-linecap: round; stroke-width: 2px;"/>
+															<path d="M32.59,29.5H15.41c-.69,0-1.18,.68-.93,1.32,1.2,3.16,3.56,7.68,9.53,7.68s8.33-4.52,9.53-7.68c.24-.64-.24-1.32-.93-1.32Z" style="fill: #13707e;"/>
+															<path d="M24.01,33.5c-3.89,0-6.88,1.8-4.87,3.5,1.03,.87,2.86,1.53,4.87,1.5,1.51-.02,3.49-.44,4.87-1.5,1.95-1.5-.97-3.5-4.87-3.5Z" style="fill: #aef0fa;"/>
+															<path d="M32.43,28H15.57c-1.67,0-2.95,1.66-2.33,3.31,1.34,3.52,4.09,8.69,10.76,8.69s9.42-5.17,10.76-8.69c.63-1.65-.65-3.31-2.33-3.31Zm-8.43,10c-5.3,0-7.6-3.99-8.89-7.4-.1-.26,.09-.6,.46-.6h16.86c.37,0,.56,.34,.46,.6-1.29,3.41-3.59,7.4-8.89,7.4Z" style="fill: #104e58;"/>
+														</svg>
+													</button class="bare-button">
+												</main>
+											</div>
+											<button id="likeBtn" class="bare-button button-hover d-flex jc-center ai-center br-4px p-t-07 p-r-4 p-b-07 p-l-4">
+												<!-- <span> -->
+													<svg width="26" height="26" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M4.81742 18H14.3544V6.48L8.38305 0L7.54535 0.6975C7.45943 0.7725 7.39499 0.8775 7.35203 1.0125C7.30907 1.1475 7.28759 1.3125 7.28759 1.5075V1.7325L8.25418 6.48H1.83174C1.48807 6.48 1.18735 6.615 0.929592 6.885C0.671837 7.155 0.542959 7.47 0.542959 7.83V9.67138C0.542959 9.77879 0.532219 9.88875 0.510738 10.0013C0.48926 10.1138 0.5 10.2225 0.542959 10.3275L3.2494 16.8525C3.37653 17.1713 3.58843 17.4422 3.88509 17.6653C4.18174 17.8884 4.49252 18 4.81742 18ZM13.0656 16.65H4.53819L1.83174 9.9225V7.83H9.84367L8.70525 2.2275L13.0656 7.0425V16.65ZM14.3544 6.48V7.83H17.2112V16.65H14.3544V18H18.5V6.48H14.3544Z" fill="black" fill-opacity="0.6"></path>
+													</svg>
+													<span class="font-SSP-14 color-000000-60 fw-600 m-l-03">Like</span>
+												<!-- </span> -->
+											</button>
+										</section>
+										<button class="bare-button button-hover d-flex jc-center ai-center br-4px p-t-07 p-r-4 p-b-07 p-l-4">
+											<svg width="25" height="22" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M6.5 5.5H16.5V6.5H6.5V5.5ZM6.5 9.5H13.5V8.5H6.5V9.5ZM22.5 7.5C22.5148 8.59493 22.2643 9.67716 21.7697 10.6541C21.2751 11.6311 20.5512 12.4738 19.66 13.11L11.5 18.5V14.5H7.5C5.64348 14.5 3.86301 13.7625 2.55025 12.4497C1.2375 11.137 0.5 9.35652 0.5 7.5C0.5 5.64348 1.2375 3.86301 2.55025 2.55025C3.86301 1.2375 5.64348 0.5 7.5 0.5H15.5C17.3565 0.5 19.137 1.2375 20.4497 2.55025C21.7625 3.86301 22.5 5.64348 22.5 7.5ZM20.5 7.5C20.5 6.17392 19.9732 4.90215 19.0355 3.96447C18.0979 3.02678 16.8261 2.5 15.5 2.5H7.5C6.17392 2.5 4.90215 3.02678 3.96447 3.96447C3.02678 4.90215 2.5 6.17392 2.5 7.5C2.5 8.82608 3.02678 10.0979 3.96447 11.0355C4.90215 11.9732 6.17392 12.5 7.5 12.5H13.5V14.78L18.5 11.5C19.1336 11.0463 19.6469 10.4448 19.9955 9.74774C20.344 9.05069 20.5172 8.27913 20.5 7.5Z" fill="black" fill-opacity="0.6"></path>
+											</svg>
+											<span class="font-SSP-14 fw-600 color-000000-60 m-l-03">Comment</span>
+										</button>
+										<button class="bare-button button-hover d-flex jc-center ai-center br-4px p-t-07 p-r-4 p-b-07 p-l-4">
+											<svg width="25" height="25" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M6.49998 0.0999756C4.3031 0.0999756 2.49998 1.9031 2.49998 4.09998V11.2L1.34998 10.05L0.224976 11.1875L3.29998 14.2625L6.37498 11.1875L5.24998 10.0625L4.09998 11.2V4.09998C4.09998 2.77654 5.17654 1.69998 6.49998 1.69998H10.9V0.0999756H6.49998ZM13.7 2.73748L10.6125 5.82498L11.75 6.94998L12.9 5.79998V12.9C12.9 14.2234 11.8234 15.3 10.5 15.3H6.09998V16.9H10.5C12.6969 16.9 14.5 15.0968 14.5 12.9V5.79998L15.65 6.94998L16.775 5.81248L13.7 2.73748Z" fill="black" fill-opacity="0.6"></path>
+											</svg>
+											<span class="font-SSP-14 fw-600 color-000000-60 m-l-03">Repost</span>
+										</button>
+										<button class="bare-button button-hover d-flex jc-center ai-center br-4px p-t-07 p-r-4 p-b-07 p-l-4">
+											<svg width="26" height="26" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M17 0L0 5.66667L6.20095 9.11524L12.9524 4.04762L7.88476 10.799L11.3333 17L17 0Z" fill="black" fill-opacity="0.6"></path>
+											</svg>	
+											<span class="font-SSP-14 fw-600 color-000000-60 m-l-03">Send</span>
+										</button>
+									</footer>
+								</article>
+								<footer>
+									<div class="d-flex m-t-2 ai-start">
+										<div class="d-flex b-DBDBDB br-50">
+											<img src="./assets/profile_11.png" width="40" heigth="40" style="border-radius: 50%;"/>
+										</div>
+										<div class="editor-container d-flex flex-column m-l-025 flex-grow-1">
+											<div class="editor b-rgb-0003 br-28px d-flex flex-wrap flex-grow-1">
+												<div class="d-flex flex-1-1-auto p-07 mw-0">
+														<div id="vanilla1343" data-gramm="false" role="textbox" contenteditable="true" data-placeholder="Add a comment..." aria-placeholder="Add a comment..." aria-multiline="true" aria-labelledby="txtboxLabel" aria-required="true" onkeydown="pullTextFromCommentEditor(event)" class="h-100 w-100 text-container text-after font-SSP-14">
+															<p>
+																<br>
+															</p>
+														</div>
+												</div>
+												<div class="d-flex m-l-auto">
+													<div>
+														<button class="bare-button editor-btn">
+															<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M6 8.5C6 8.20333 6.08798 7.91332 6.2528 7.66665C6.41762 7.41997 6.65189 7.22771 6.92598 7.11418C7.20007 7.00065 7.50167 6.97094 7.79264 7.02882C8.08361 7.0867 8.35089 7.22956 8.56067 7.43934C8.77044 7.64912 8.91331 7.91639 8.97118 8.20736C9.02906 8.49834 8.99936 8.79994 8.88582 9.07403C8.77229 9.34811 8.58003 9.58238 8.33336 9.7472C8.08669 9.91203 7.79668 10 7.5 10C7.10218 10 6.72065 9.84196 6.43934 9.56066C6.15804 9.27936 6 8.89782 6 8.5ZM12.5 10C12.7967 10 13.0867 9.91203 13.3334 9.7472C13.58 9.58238 13.7723 9.34811 13.8858 9.07403C13.9994 8.79994 14.0291 8.49834 13.9712 8.20736C13.9133 7.91639 13.7704 7.64912 13.5607 7.43934C13.3509 7.22956 13.0836 7.0867 12.7926 7.02882C12.5017 6.97094 12.2001 7.00065 11.926 7.11418C11.6519 7.22771 11.4176 7.41997 11.2528 7.66665C11.088 7.91332 11 8.20333 11 8.5C11 8.89782 11.158 9.27936 11.4393 9.56066C11.7206 9.84196 12.1022 10 12.5 10ZM20 10C20 11.9778 19.4135 13.9112 18.3147 15.5557C17.2159 17.2002 15.6541 18.4819 13.8268 19.2388C11.9996 19.9957 9.98891 20.1937 8.0491 19.8079C6.10929 19.422 4.32746 18.4696 2.92894 17.0711C1.53041 15.6725 0.578004 13.8907 0.192152 11.9509C-0.193701 10.0111 0.00433284 8.00043 0.761209 6.17317C1.51809 4.3459 2.79981 2.78412 4.4443 1.6853C6.08879 0.58649 8.02219 0 10 0C11.3132 0 12.6136 0.258658 13.8268 0.761205C15.0401 1.26375 16.1425 2.00035 17.0711 2.92893C17.9997 3.85752 18.7363 4.95991 19.2388 6.17317C19.7413 7.38642 20 8.68678 20 10ZM18 10C18 8.41775 17.5308 6.87103 16.6518 5.55544C15.7727 4.23984 14.5233 3.21447 13.0615 2.60896C11.5997 2.00346 9.99113 1.84504 8.43928 2.15372C6.88743 2.4624 5.46197 3.22433 4.34315 4.34315C3.22433 5.46197 2.4624 6.88743 2.15372 8.43928C1.84504 9.99113 2.00347 11.5997 2.60897 13.0615C3.21447 14.5233 4.23985 15.7727 5.55544 16.6518C6.87104 17.5308 8.41775 18 10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1572 14.1566 18 12.1217 18 10ZM10 14C8.40924 13.9986 6.88414 13.3655 5.76 12.24L5.05 13C6.36237 14.3099 8.14081 15.0455 9.995 15.0455C11.8492 15.0455 13.6276 14.3099 14.94 13L14.23 12.29C13.1002 13.3948 11.5802 14.0093 10 14Z" fill="black" fill-opacity="0.6"/>
+															</svg>
+														</button>
+													</div>	
+													<div>
+														<button class="bare-button editor-btn">
+															<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M17 0H3C2.20435 0 1.44129 0.316071 0.87868 0.87868C0.316071 1.44129 0 2.20435 0 3V13C0 13.7956 0.316071 14.5587 0.87868 15.1213C1.44129 15.6839 2.20435 16 3 16H17C17.7956 16 18.5587 15.6839 19.1213 15.1213C19.6839 14.5587 20 13.7956 20 13V3C20 2.20435 19.6839 1.44129 19.1213 0.87868C18.5587 0.316071 17.7956 0 17 0ZM18 13C18.0008 13.1316 17.9755 13.2621 17.9258 13.3839C17.876 13.5057 17.8027 13.6166 17.71 13.71L14 10L12 12L6 6L2 10V3C2 2.73478 2.10536 2.48043 2.29289 2.29289C2.48043 2.10536 2.73478 2 3 2H17C17.2652 2 17.5196 2.10536 17.7071 2.29289C17.8946 2.48043 18 2.73478 18 3V13ZM16 6C16 6.39556 15.8827 6.78224 15.6629 7.11114C15.4432 7.44004 15.1308 7.69638 14.7654 7.84776C14.3999 7.99913 13.9978 8.03874 13.6098 7.96157C13.2219 7.8844 12.8655 7.69392 12.5858 7.41421C12.3061 7.13451 12.1156 6.77814 12.0384 6.39018C11.9613 6.00222 12.0009 5.60009 12.1522 5.23463C12.3036 4.86918 12.56 4.55682 12.8889 4.33706C13.2178 4.1173 13.6044 4 14 4C14.5304 4 15.0391 4.21071 15.4142 4.58579C15.7893 4.96086 16 5.46957 16 6Z" fill="black" fill-opacity="0.6"/>
+															</svg>
+														</button>
+													</div>
+												</div>
+											</div>
+											<div id="vanilla1343-btn" class="post-cmt-btn-container">
+												<button class="post-cmt-btn m-t-075" onclick="postComment()">
+													Post
+												</button>
+											</div>
+										</div>
+									</div>
+									<div id="comments-container">
+										<article class="m-b-2 m-t-2">
+											<div class="d-flex ai-start">
+												<div class="d-flex b-DBDBDB br-50">
+													<img src="./assets/profile_10.png" alt="watermellon" width="40" height="40" style="border-radius: 50%;"/>
+												</div>
+												<div class="all-cmts-wrapper w-100 m-l-025">
+													<div class="cmts-wrapper">
+														<div class="cmts">
+															<header class="cmts-profile-info-wrapper pos-rel">
+																<p class="font-SSP-14 fw-600 color-000000E6"> Larry Page <span class="color-00000099 m-l-1">•  3rd+</span></p>
+																<p class="font-SSP-12 color-00000099"> American business magnate, computer scientist and internet entrepreneur.</p>
+																<div class="pos-abs cmts-actions">
+																	<span class="font-SSP-14 color-00000099" style="margin-top:-1px">
+																		2d
+																	</span>
+																	<button class="bare-button d-flex ai-center">
+																		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20">
+																			<title>dots-three-horizontal</title>
+																			<path fill="#383838" d="M10.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2zM3.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.986 2.199-2.2s-0.984-2.2-2.199-2.2zM17.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2z"></path>
+																			</svg>																
+																	</button>
+																</div>
+															</header>
+															<div class="pos-rel m-t-1">
+																<p class="text-content font-SSP-14 color-000000E6 lh-20px">
+																	<span>
+																		Discord has around 500 million registered users. Even if a person on average does 10
+																	</span> 
+																	<span>
+																		messages a day, the number of messages in a year would be ~1.8 Billion. How and where
+																	</span> 
+																	<!-- <span>
+																		does Discord store these many messages and how are they retrieved?
+																	</span>  -->
+																</p>
+																<!-- conditional rendering of see more button  -->
+																<button role="button" class="bare-button see-more-btn bg-f2f2f2" onclick="onSeeMore()">
+																	<span class="font-SSP-14 color-8F8F8F link-underline">...see more</span>
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="cmts-reactions-wrapper d-flex ai-center p-025 m-l-6">
+												<div class="d-flex p-r-1 ai-center">
+													<button class="reaction-like bare-button d-flex ai-center">
+														<span class="font-SSP-12 fw-600 color-00000099">
+															Like
+														</span>
+													</button>
+													<span class="dot-sep m-l-025">
+													</span>
+													<span class="m-l-1">
+														<button class="bare-button d-flex ai-center p-0 cmt-reactions m-t-006" onclick="openFeedModal()">
+															<!-- Images will be dynamically inserted and image following 1st image will have negative left margin -->
+															<img src="./assets/like.svg" width="16" height="16"/>
+															<img src="./assets/empathy.svg" style="margin:0 0 0 -4px" width="16" height="16"/>
+															<img src="./assets/interest.svg" style="margin:0 0 0 -4px"  width="16" height="16"/>
+															<img src="./assets/praise.svg" style="margin:0 0 0 -4px" width="16" height="16"/>
+															<img src="./assets/funny.svg" style="margin:0 0 0 -4px" width="16" height="16"/>
+															<img src="./assets/appreciation.svg" style="margin:0 0 0 -4px" width="16" height="16"/>
+															<!-- <span class="total-reactions font-SSP-12">
+																1988
+															</span> -->
+															<span class="no-reactions font-SSP-12 color-00000099 m-l-025 link-highlight">
+																1987 
+															</span>
+														</button>
+													</span>
+												</div>
+												<div class="vertical-seperator">
+												</div>
+												<div class="d-flex p-l-1 ai-center">
+													<button class="reaction-like bare-button d-flex ai-center">
+														<span class="font-SSP-12 fw-600 color-00000099">
+															Reply
+														</span>
+													</button>
+													<span class="dot-sep m-l-025">
+													</span>
+													<span class="m-l-1">
+														<button class="bare-button d-flex ai-center p-0 cmt-reactions" onclick="openFeedModal()">
+															<span class="no-reactions font-SSP-12 color-00000099 m-l-025 link-highlight">
+																3 
+																<!-- <span>Reply</span> -->
+																<span>Replies</span>
+															</span>
+														</button>
+													</span>
+												</div>
+											</div>
+											<article class="m-l-6">
+												<div class="load-prev-replies m-t-025 m-b-075">
+													<button class="bare-button">
+														<span class="font-SSP-12 color-000000E6 link-underline">Load previous replies</span>
+													</button>
+												</div>
+												<div class="d-flex ai-start">
+													<div class="d-flex b-DBDBDB br-50">
+														<img src="./assets/profile_10.png" alt="watermellon" width="32" height="32" style="border-radius: 50%;"/>
+													</div>
+													<div class="all-cmts-wrapper w-100 m-l-025">
+														<div class="cmts-wrapper">
+															<div class="cmts">
+																<header class="cmts-profile-info-wrapper pos-rel">
+																	<p class="font-SSP-14 fw-600 color-000000E6"> Larry Page <span class="color-00000099 m-l-1">•  3rd+</span></p>
+																	<p class="font-SSP-12 color-00000099"> American business magnate, computer scientist and internet entrepreneur.</p>
+																	<div class="pos-abs cmts-actions">
+																		<span class="font-SSP-14 color-00000099" style="margin-top:-1px">
+																			2d
+																		</span>
+																		<button class="bare-button d-flex ai-center">
+																			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20">
+																				<title>dots-three-horizontal</title>
+																				<path fill="#383838" d="M10.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2zM3.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.986 2.199-2.2s-0.984-2.2-2.199-2.2zM17.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2z"></path>
+																				</svg>																
+																		</button>
+																	</div>
+																</header>
+																<div class="pos-rel m-t-1">
+																	<p class="text-content font-SSP-14 color-000000E6 lh-20px">
+																		<span>
+																			Discord has around 500 million registered users. Even if a person on average does 10
+																		</span> 
+																		<span>
+																			messages a day, the number of messages in a year would be ~1.8 Billion. How and where
+																		</span> 
+																		<!-- <span>
+																			does Discord store these many messages and how are they retrieved?
+																		</span>  -->
+																	</p>
+																	<!-- conditional rendering of see more button  -->
+																	<button role="button" class="bare-button see-more-btn bg-f2f2f2" onclick="onSeeMore()">
+																		<span class="font-SSP-14 color-8F8F8F link-underline">...see more</span>
+																	</button>
+																</div>
+															</div>
+														</div>
+														<!-- <div class="load-prev-replies m-t-025 m-b-025">
+															<button class="bare-button">
+																<span class="font-SSP-12 color-000000E6 link-underline">Load previous replies</span>
+															</button>
+														</div> -->
+													</div>
+												</div>
+												<div class="cmts-reactions-wrapper d-flex ai-center p-025 m-l-5">
+													<div class="d-flex p-r-1 ai-center">
+														<button class="reaction-like bare-button d-flex ai-center">
+															<span class="font-SSP-12 fw-600 color-00000099">
+																Like
+															</span>
+														</button>
+														<span class="dot-sep m-l-025">
+														</span>
+														<span class="m-l-1">
+															<button class="bare-button d-flex ai-center p-0 cmt-reactions m-t-006" onclick="openReactionsCountDetails()">
+																<!-- Images will be dynamically inserted and image following 1st image will have negative left margin -->
+																<img src="./assets/like.svg" width="16" height="16"/>
+																<img src="./assets/empathy.svg" style="margin:0 0 0 -4px" width="16" height="16"/>
+																<img src="./assets/interest.svg" style="margin:0 0 0 -4px"  width="16" height="16"/>
+																<img src="./assets/praise.svg" style="margin:0 0 0 -4px" width="16" height="16"/>
+																<img src="./assets/funny.svg" style="margin:0 0 0 -4px" width="16" height="16"/>
+																<img src="./assets/appreciation.svg" style="margin:0 0 0 -4px" width="16" height="16"/>
+																<!-- <span class="total-reactions font-SSP-12">
+																	1988
+																</span> -->
+																<span class="no-reactions font-SSP-12 color-00000099 m-l-025 link-highlight">
+																	1987 
+																</span>
+															</button>
+														</span>
+													</div>
+													<div class="vertical-seperator">
+													</div>
+													<div class="d-flex p-l-1 ai-center">
+														<button class="reaction-like bare-button d-flex ai-center">
+															<span class="font-SSP-12 fw-600 color-00000099">
+																Reply
+															</span>
+														</button>
+														<span class="dot-sep m-l-025">
+														</span>
+														<span class="m-l-1">
+															<button class="bare-button d-flex ai-center p-0 cmt-reactions" onclick="openFeedModal()">
+																<span class="no-reactions font-SSP-12 color-00000099 m-l-025 link-highlight">
+																	3 
+																	<!-- <span>Reply</span> -->
+																	<span>Replies</span>
+																</span>
+															</button>
+														</span>
+													</div>
+												</div>
+											</article>
+											<div class="d-flex m-t-1 ai-start m-l-6">
+												<div class="d-flex b-DBDBDB br-50 m-t-025">
+													<img src="./assets/profile_11.png" width="32" heigth="32" style="border-radius: 50%;"/>
+												</div>
+												<div class="child-editor-container d-flex flex-column m-l-025 flex-grow-1">
+													<div>
+														<div class="editor b-rgb-0003 br-28px d-flex flex-wrap flex-grow-1">
+															<div class="d-flex flex-1-1-auto p-07 mw-0">
+																	<div id="vanilla1344" data-gramm="false" role="textbox" contenteditable="true" data-placeholder="Add a comment..." aria-placeholder="Add a comment..." aria-multiline="true" aria-labelledby="txtboxLabel" aria-required="true" onkeydown="pullTextFromCommentEditor(event)" class="h-100 w-100 text-container text-after font-SSP-14">
+																		<p>
+																			<br>
+																		</p>
+																	</div>
+															</div>
+															<div class="d-flex m-l-auto">
+																<div>
+																	<button class="bare-button editor-btn">
+																		<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+																			<path d="M6 8.5C6 8.20333 6.08798 7.91332 6.2528 7.66665C6.41762 7.41997 6.65189 7.22771 6.92598 7.11418C7.20007 7.00065 7.50167 6.97094 7.79264 7.02882C8.08361 7.0867 8.35089 7.22956 8.56067 7.43934C8.77044 7.64912 8.91331 7.91639 8.97118 8.20736C9.02906 8.49834 8.99936 8.79994 8.88582 9.07403C8.77229 9.34811 8.58003 9.58238 8.33336 9.7472C8.08669 9.91203 7.79668 10 7.5 10C7.10218 10 6.72065 9.84196 6.43934 9.56066C6.15804 9.27936 6 8.89782 6 8.5ZM12.5 10C12.7967 10 13.0867 9.91203 13.3334 9.7472C13.58 9.58238 13.7723 9.34811 13.8858 9.07403C13.9994 8.79994 14.0291 8.49834 13.9712 8.20736C13.9133 7.91639 13.7704 7.64912 13.5607 7.43934C13.3509 7.22956 13.0836 7.0867 12.7926 7.02882C12.5017 6.97094 12.2001 7.00065 11.926 7.11418C11.6519 7.22771 11.4176 7.41997 11.2528 7.66665C11.088 7.91332 11 8.20333 11 8.5C11 8.89782 11.158 9.27936 11.4393 9.56066C11.7206 9.84196 12.1022 10 12.5 10ZM20 10C20 11.9778 19.4135 13.9112 18.3147 15.5557C17.2159 17.2002 15.6541 18.4819 13.8268 19.2388C11.9996 19.9957 9.98891 20.1937 8.0491 19.8079C6.10929 19.422 4.32746 18.4696 2.92894 17.0711C1.53041 15.6725 0.578004 13.8907 0.192152 11.9509C-0.193701 10.0111 0.00433284 8.00043 0.761209 6.17317C1.51809 4.3459 2.79981 2.78412 4.4443 1.6853C6.08879 0.58649 8.02219 0 10 0C11.3132 0 12.6136 0.258658 13.8268 0.761205C15.0401 1.26375 16.1425 2.00035 17.0711 2.92893C17.9997 3.85752 18.7363 4.95991 19.2388 6.17317C19.7413 7.38642 20 8.68678 20 10ZM18 10C18 8.41775 17.5308 6.87103 16.6518 5.55544C15.7727 4.23984 14.5233 3.21447 13.0615 2.60896C11.5997 2.00346 9.99113 1.84504 8.43928 2.15372C6.88743 2.4624 5.46197 3.22433 4.34315 4.34315C3.22433 5.46197 2.4624 6.88743 2.15372 8.43928C1.84504 9.99113 2.00347 11.5997 2.60897 13.0615C3.21447 14.5233 4.23985 15.7727 5.55544 16.6518C6.87104 17.5308 8.41775 18 10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1572 14.1566 18 12.1217 18 10ZM10 14C8.40924 13.9986 6.88414 13.3655 5.76 12.24L5.05 13C6.36237 14.3099 8.14081 15.0455 9.995 15.0455C11.8492 15.0455 13.6276 14.3099 14.94 13L14.23 12.29C13.1002 13.3948 11.5802 14.0093 10 14Z" fill="black" fill-opacity="0.6"/>
+																		</svg>
+																	</button>
+																</div>	
+																<div>
+																	<button class="bare-button editor-btn">
+																		<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																			<path d="M17 0H3C2.20435 0 1.44129 0.316071 0.87868 0.87868C0.316071 1.44129 0 2.20435 0 3V13C0 13.7956 0.316071 14.5587 0.87868 15.1213C1.44129 15.6839 2.20435 16 3 16H17C17.7956 16 18.5587 15.6839 19.1213 15.1213C19.6839 14.5587 20 13.7956 20 13V3C20 2.20435 19.6839 1.44129 19.1213 0.87868C18.5587 0.316071 17.7956 0 17 0ZM18 13C18.0008 13.1316 17.9755 13.2621 17.9258 13.3839C17.876 13.5057 17.8027 13.6166 17.71 13.71L14 10L12 12L6 6L2 10V3C2 2.73478 2.10536 2.48043 2.29289 2.29289C2.48043 2.10536 2.73478 2 3 2H17C17.2652 2 17.5196 2.10536 17.7071 2.29289C17.8946 2.48043 18 2.73478 18 3V13ZM16 6C16 6.39556 15.8827 6.78224 15.6629 7.11114C15.4432 7.44004 15.1308 7.69638 14.7654 7.84776C14.3999 7.99913 13.9978 8.03874 13.6098 7.96157C13.2219 7.8844 12.8655 7.69392 12.5858 7.41421C12.3061 7.13451 12.1156 6.77814 12.0384 6.39018C11.9613 6.00222 12.0009 5.60009 12.1522 5.23463C12.3036 4.86918 12.56 4.55682 12.8889 4.33706C13.2178 4.1173 13.6044 4 14 4C14.5304 4 15.0391 4.21071 15.4142 4.58579C15.7893 4.96086 16 5.46957 16 6Z" fill="black" fill-opacity="0.6"/>
+																		</svg>
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div id="vanilla1344-btn" class="post-cmt-btn-container">
+														<button class="post-cmt-btn m-t-075" onclick="postComment()">
+															Post
+														</button>
+													</div>
+												</div>
+											</div>
+										</article>
+										<article class="m-b-2 m-t-2">
+											<div class="d-flex ai-start">
+												<div class="d-flex b-DBDBDB br-50">
+													<img src="./assets/profile_10.png" alt="watermellon" width="40" height="40" style="border-radius: 50%;"/>
+												</div>
+												<div class="all-cmts-wrapper w-100 m-l-025">
+													<div class="cmts-wrapper">
+														<div class="cmts">
+															<header class="cmts-profile-info-wrapper pos-rel">
+																<p class="font-SSP-14 fw-600 color-000000E6"> Larry Page <span class="color-00000099 m-l-1">•  3rd+</span></p>
+																<p class="font-SSP-12 color-00000099"> American business magnate, computer scientist and internet entrepreneur.</p>
+																<div class="pos-abs cmts-actions">
+																	<span class="font-SSP-14 color-00000099" style="margin-top:-1px">
+																		2d
+																	</span>
+																	<button class="bare-button d-flex ai-center">
+																		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20">
+																			<title>dots-three-horizontal</title>
+																			<path fill="#383838" d="M10.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2zM3.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.986 2.199-2.2s-0.984-2.2-2.199-2.2zM17.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2z"></path>
+																			</svg>																
+																	</button>
+																</div>
+															</header>
+															<div class="pos-rel m-t-1">
+																<p class="text-content font-SSP-14 color-000000E6 lh-20px">
+																	<span>
+																		Discord has around 500 million registered users. Even if a person on average does 10
+																	</span> 
+																	<span>
+																		messages a day, the number of messages in a year would be ~1.8 Billion. How and where
+																	</span> 
+																	<!-- <span>
+																		does Discord store these many messages and how are they retrieved?
+																	</span>  -->
+																</p>
+																<!-- conditional rendering of see more button  -->
+																<button role="button" class="bare-button see-more-btn bg-f2f2f2" onclick="onSeeMore()">
+																	<span class="font-SSP-14 color-8F8F8F link-underline">...see more</span>
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="cmts-reactions-wrapper d-flex ai-center p-025 m-l-6">
+												<div class="d-flex p-r-1 ai-center">
+													<button class="reaction-like bare-button d-flex ai-center">
+														<span class="font-SSP-12 fw-600 color-00000099">
+															Like
+														</span>
+													</button>
+													<span class="dot-sep m-l-025">
+													</span>
+													<span class="m-l-1">
+														<button class="bare-button d-flex ai-center p-0 cmt-reactions m-t-006" onclick="openFeedModal()">
+															<!-- Images will be dynamically inserted and image following 1st image will have negative left margin -->
+															<img src="./assets/like.svg" width="16" height="16"/>
+															<img src="./assets/empathy.svg" style="margin:0 0 0 -4px" width="16" height="16"/>
+															<img src="./assets/interest.svg" style="margin:0 0 0 -4px"  width="16" height="16"/>
+															<img src="./assets/praise.svg" style="margin:0 0 0 -4px" width="16" height="16"/>
+															<img src="./assets/funny.svg" style="margin:0 0 0 -4px" width="16" height="16"/>
+															<img src="./assets/appreciation.svg" style="margin:0 0 0 -4px" width="16" height="16"/>
+															<!-- <span class="total-reactions font-SSP-12">
+																1988
+															</span> -->
+															<span class="no-reactions font-SSP-12 color-00000099 m-l-025 link-highlight">
+																1987 
+															</span>
+														</button>
+													</span>
+												</div>
+												<div class="vertical-seperator">
+												</div>
+												<div class="d-flex p-l-1 ai-center">
+													<button class="reaction-like bare-button d-flex ai-center">
+														<span class="font-SSP-12 fw-600 color-00000099">
+															Reply
+														</span>
+													</button>
+													<span class="dot-sep m-l-025">
+													</span>
+													<span class="m-l-1">
+														<button class="bare-button d-flex ai-center p-0 cmt-reactions" onclick="openFeedModal()">
+															<span class="no-reactions font-SSP-12 color-00000099 m-l-025 link-highlight">
+																3 
+																<!-- <span>Reply</span> -->
+																<span>Replies</span>
+															</span>
+														</button>
+													</span>
+												</div>
+											</div>
+											<article class="m-l-6">
+												<div class="load-prev-replies m-t-025 m-b-075">
+													<button class="bare-button">
+														<span class="font-SSP-12 color-000000E6 link-underline">Load previous replies</span>
+													</button>
+												</div>
+												<div class="d-flex ai-start">
+													<div class="d-flex b-DBDBDB br-50">
+														<img src="./assets/profile_10.png" alt="watermellon" width="32" height="32" style="border-radius: 50%;"/>
+													</div>
+													<div class="all-cmts-wrapper w-100 m-l-025">
+														<div class="cmts-wrapper">
+															<div class="cmts">
+																<header class="cmts-profile-info-wrapper pos-rel">
+																	<p class="font-SSP-14 fw-600 color-000000E6"> Larry Page <span class="color-00000099 m-l-1">•  3rd+</span></p>
+																	<p class="font-SSP-12 color-00000099"> American business magnate, computer scientist and internet entrepreneur.</p>
+																	<div class="pos-abs cmts-actions">
+																		<span class="font-SSP-14 color-00000099" style="margin-top:-1px">
+																			2d
+																		</span>
+																		<button class="bare-button d-flex ai-center">
+																			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20">
+																				<title>dots-three-horizontal</title>
+																				<path fill="#383838" d="M10.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2zM3.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.986 2.199-2.2s-0.984-2.2-2.199-2.2zM17.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2z"></path>
+																				</svg>																
+																		</button>
+																	</div>
+																</header>
+																<div class="pos-rel m-t-1">
+																	<p class="text-content font-SSP-14 color-000000E6 lh-20px">
+																		<span>
+																			Discord has around 500 million registered users. Even if a person on average does 10
+																		</span> 
+																		<span>
+																			messages a day, the number of messages in a year would be ~1.8 Billion. How and where
+																		</span> 
+																		<!-- <span>
+																			does Discord store these many messages and how are they retrieved?
+																		</span>  -->
+																	</p>
+																	<!-- conditional rendering of see more button  -->
+																	<button role="button" class="bare-button see-more-btn bg-f2f2f2" onclick="onSeeMore()">
+																		<span class="font-SSP-14 color-8F8F8F link-underline">...see more</span>
+																	</button>
+																</div>
+															</div>
+														</div>
+														<!-- <div class="load-prev-replies m-t-025 m-b-025">
+															<button class="bare-button">
+																<span class="font-SSP-12 color-000000E6 link-underline">Load previous replies</span>
+															</button>
+														</div> -->
+													</div>
+												</div>
+												<div class="cmts-reactions-wrapper d-flex ai-center p-025 m-l-5">
+													<div class="d-flex p-r-1 ai-center">
+														<button class="reaction-like bare-button d-flex ai-center">
+															<span class="font-SSP-12 fw-600 color-00000099">
+																Like
+															</span>
+														</button>
+														<span class="dot-sep m-l-025">
+														</span>
+														<span class="m-l-1">
+															<button class="bare-button d-flex ai-center p-0 cmt-reactions m-t-006" onclick="openFeedModal()">
+																<!-- Images will be dynamically inserted and image following 1st image will have negative left margin -->
+																<img src="./assets/like.svg" width="16" height="16"/>
+																<img src="./assets/empathy.svg" style="margin:0 0 0 -4px" width="16" height="16"/>
+																<img src="./assets/interest.svg" style="margin:0 0 0 -4px"  width="16" height="16"/>
+																<img src="./assets/praise.svg" style="margin:0 0 0 -4px" width="16" height="16"/>
+																<img src="./assets/funny.svg" style="margin:0 0 0 -4px" width="16" height="16"/>
+																<img src="./assets/appreciation.svg" style="margin:0 0 0 -4px" width="16" height="16"/>
+																<!-- <span class="total-reactions font-SSP-12">
+																	1988
+																</span> -->
+																<span class="no-reactions font-SSP-12 color-00000099 m-l-025 link-highlight">
+																	1987 
+																</span>
+															</button>
+														</span>
+													</div>
+													<div class="vertical-seperator">
+													</div>
+													<div class="d-flex p-l-1 ai-center">
+														<button class="reaction-like bare-button d-flex ai-center">
+															<span class="font-SSP-12 fw-600 color-00000099">
+																Reply
+															</span>
+														</button>
+														<span class="dot-sep m-l-025">
+														</span>
+														<span class="m-l-1">
+															<button class="bare-button d-flex ai-center p-0 cmt-reactions" onclick="openFeedModal()">
+																<span class="no-reactions font-SSP-12 color-00000099 m-l-025 link-highlight">
+																	3 
+																	<!-- <span>Reply</span> -->
+																	<span>Replies</span>
+																</span>
+															</button>
+														</span>
+													</div>
+												</div>
+											</article>
+											<div class="d-flex m-t-1 ai-start m-l-6">
+												<div class="d-flex b-DBDBDB br-50 m-t-025">
+													<img src="./assets/profile_11.png" width="32" heigth="32" style="border-radius: 50%;"/>
+												</div>
+												<div class="child-editor-container d-flex flex-column m-l-025 flex-grow-1">
+													<div>
+														<div class="editor b-rgb-0003 br-28px d-flex flex-wrap flex-grow-1">
+															<div class="d-flex flex-1-1-auto p-07 mw-0">
+																	<div id="vanilla1345" data-gramm="false" role="textbox" contenteditable="true" data-placeholder="Add a comment..." aria-placeholder="Add a comment..." aria-multiline="true" aria-labelledby="txtboxLabel" aria-required="true" onkeydown="pullTextFromCommentEditor(event)" class="h-100 w-100 text-container text-after font-SSP-14">
+																		<p>
+																			<br>
+																		</p>
+																	</div>
+															</div>
+															<div class="d-flex m-l-auto">
+																<div>
+																	<button class="bare-button editor-btn">
+																		<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+																			<path d="M6 8.5C6 8.20333 6.08798 7.91332 6.2528 7.66665C6.41762 7.41997 6.65189 7.22771 6.92598 7.11418C7.20007 7.00065 7.50167 6.97094 7.79264 7.02882C8.08361 7.0867 8.35089 7.22956 8.56067 7.43934C8.77044 7.64912 8.91331 7.91639 8.97118 8.20736C9.02906 8.49834 8.99936 8.79994 8.88582 9.07403C8.77229 9.34811 8.58003 9.58238 8.33336 9.7472C8.08669 9.91203 7.79668 10 7.5 10C7.10218 10 6.72065 9.84196 6.43934 9.56066C6.15804 9.27936 6 8.89782 6 8.5ZM12.5 10C12.7967 10 13.0867 9.91203 13.3334 9.7472C13.58 9.58238 13.7723 9.34811 13.8858 9.07403C13.9994 8.79994 14.0291 8.49834 13.9712 8.20736C13.9133 7.91639 13.7704 7.64912 13.5607 7.43934C13.3509 7.22956 13.0836 7.0867 12.7926 7.02882C12.5017 6.97094 12.2001 7.00065 11.926 7.11418C11.6519 7.22771 11.4176 7.41997 11.2528 7.66665C11.088 7.91332 11 8.20333 11 8.5C11 8.89782 11.158 9.27936 11.4393 9.56066C11.7206 9.84196 12.1022 10 12.5 10ZM20 10C20 11.9778 19.4135 13.9112 18.3147 15.5557C17.2159 17.2002 15.6541 18.4819 13.8268 19.2388C11.9996 19.9957 9.98891 20.1937 8.0491 19.8079C6.10929 19.422 4.32746 18.4696 2.92894 17.0711C1.53041 15.6725 0.578004 13.8907 0.192152 11.9509C-0.193701 10.0111 0.00433284 8.00043 0.761209 6.17317C1.51809 4.3459 2.79981 2.78412 4.4443 1.6853C6.08879 0.58649 8.02219 0 10 0C11.3132 0 12.6136 0.258658 13.8268 0.761205C15.0401 1.26375 16.1425 2.00035 17.0711 2.92893C17.9997 3.85752 18.7363 4.95991 19.2388 6.17317C19.7413 7.38642 20 8.68678 20 10ZM18 10C18 8.41775 17.5308 6.87103 16.6518 5.55544C15.7727 4.23984 14.5233 3.21447 13.0615 2.60896C11.5997 2.00346 9.99113 1.84504 8.43928 2.15372C6.88743 2.4624 5.46197 3.22433 4.34315 4.34315C3.22433 5.46197 2.4624 6.88743 2.15372 8.43928C1.84504 9.99113 2.00347 11.5997 2.60897 13.0615C3.21447 14.5233 4.23985 15.7727 5.55544 16.6518C6.87104 17.5308 8.41775 18 10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1572 14.1566 18 12.1217 18 10ZM10 14C8.40924 13.9986 6.88414 13.3655 5.76 12.24L5.05 13C6.36237 14.3099 8.14081 15.0455 9.995 15.0455C11.8492 15.0455 13.6276 14.3099 14.94 13L14.23 12.29C13.1002 13.3948 11.5802 14.0093 10 14Z" fill="black" fill-opacity="0.6"/>
+																		</svg>
+																	</button>
+																</div>	
+																<div>
+																	<button class="bare-button editor-btn">
+																		<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																			<path d="M17 0H3C2.20435 0 1.44129 0.316071 0.87868 0.87868C0.316071 1.44129 0 2.20435 0 3V13C0 13.7956 0.316071 14.5587 0.87868 15.1213C1.44129 15.6839 2.20435 16 3 16H17C17.7956 16 18.5587 15.6839 19.1213 15.1213C19.6839 14.5587 20 13.7956 20 13V3C20 2.20435 19.6839 1.44129 19.1213 0.87868C18.5587 0.316071 17.7956 0 17 0ZM18 13C18.0008 13.1316 17.9755 13.2621 17.9258 13.3839C17.876 13.5057 17.8027 13.6166 17.71 13.71L14 10L12 12L6 6L2 10V3C2 2.73478 2.10536 2.48043 2.29289 2.29289C2.48043 2.10536 2.73478 2 3 2H17C17.2652 2 17.5196 2.10536 17.7071 2.29289C17.8946 2.48043 18 2.73478 18 3V13ZM16 6C16 6.39556 15.8827 6.78224 15.6629 7.11114C15.4432 7.44004 15.1308 7.69638 14.7654 7.84776C14.3999 7.99913 13.9978 8.03874 13.6098 7.96157C13.2219 7.8844 12.8655 7.69392 12.5858 7.41421C12.3061 7.13451 12.1156 6.77814 12.0384 6.39018C11.9613 6.00222 12.0009 5.60009 12.1522 5.23463C12.3036 4.86918 12.56 4.55682 12.8889 4.33706C13.2178 4.1173 13.6044 4 14 4C14.5304 4 15.0391 4.21071 15.4142 4.58579C15.7893 4.96086 16 5.46957 16 6Z" fill="black" fill-opacity="0.6"/>
+																		</svg>
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div id="vanilla1345-btn" class="post-cmt-btn-container">
+														<button class="post-cmt-btn m-t-075" onclick="postComment()">
+															Post
+														</button>
+													</div>
+												</div>
+											</div>
+										</article>
+										<div class="m-t-1">
+											<button class="bare-button load-more-cmts-btn" onclick="loadMoreComments()">
+												<span class="font-SSP-14 fw-600 color-00000099">Load more comments</span>
+											</button>
+										</div>
+									</div>
+								</footer>
+							</main>
+						<!-- </section> -->
+					</section>
+				</section>
+				<!-- <aside class="news-feeds"> -->
+				<aside class="aside-right">
+					<section class="short-profile">
+						<section class="aside-br-1 card p-2 m-b-1">
+							<h4 class="m-0">Trending Now</h2>
+						</section>
+					</section>
+				</aside>
+			</section>
+		</section>
+	</main>
+	<section id="feed-modal-container" class="feed-modal-container d-flex jc-center">
+		<div id="feedModalID" class="feed-modal feed-box-shadow">
+			<header class="p-l-3 p-r-3 p-t-2 p-b-2 d-flex jc-between b-b-015">
+				<span class="font-SSP-18">Create a post</span>
+				<button class="bare-button" onclick="closeFeedModal()">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+						<path d="M13.42 12L20 18.58 18.58 20 12 13.42 5.42 20 4 18.58 10.58 12 4 5.42 5.42 4 12 10.58 18.58 4 20 5.42z"></path>
+					  </svg>
+				</button>	
+			</header>
+			<main class="p-2">
+				<div class="d-flex m-b-2">
+					<div class="d-flex br-50 b-DBDBDB">
+					<!-- Dynamic Profile  -->
+						<img id="modal-FeederImg" src="./assets/profile_11.png" width="48" heigth="48" style="border-radius: 50%;"/>
+					</div>
+					<!-- Dynamic Name -->
+					<div class="d-flex flex-column">
+						<p id="modal-FeederName" class="font-SSP-16 m-l-1 m-t-03"> Ryan Roslansky </p> 
+						<p id="modal-FeederDesignation" class="font-SSP-14 color-8F8F8F m-l-1">SWE III @LinkedIn</p>
+					</div>
+				</div>
+				<!-- <textarea id="feed-Text" rows="10" cols="60" class="p-1" placeholder="What do you want to talk about?" style="border:1px solid #eee">	
+				</textarea> -->
+				<div contenteditable="true" placeholder="What do you want to talk about?" data-placeholder="What do you want to talk about?" class="post-editor" aria-placeholder="Add a comment..." aria-multiline="true">
+				</div>	
+				<div class="d-flex jc-end m-t-4">
+					<button class="post-btn" onclick="postFeed()">Post</button>
+				</div>
+			</main>
+		</div>
+	</section>
+	<section id="reactions-modal-container" class="reactions-modal-container d-flex jc-center">
+		<div id="reactionModalID" class="reactions-modal reaction-box-shadow">
+			<header class="p-l-3 p-r-3 p-t-2 b-b-015">
+				<main class="d-flex jc-between">
+					<span class="font-SSP-20">Reactions</span>
+					<button class="bare-button" onclick="closeReactionsCountDetails()">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+							<path d="M13.42 12L20 18.58 18.58 20 12 13.42 5.42 20 4 18.58 10.58 12 4 5.42 5.42 4 12 10.58 18.58 4 20 5.42z"></path>
+					  	</svg>
+					</main>
+				</button>
+				<nav>
+					<div id="vanilla1344-reactionsCount"  class="reaction-tabs d-flex ai-center">
+						<button id="vanilla1344-count1" class="bare-button p-2 reaction-tab color-00000099" role="tab" aria-selected="false" onclick="tabSelection(this.id)">
+							<div class="d-flex ai-center">
+								<span class="d-flex lh-24px font-SSP-14 fw-600">
+									All
+								</span>
+								<span class="m-l-025 font-SSP-14 fw-600">
+									1313
+								</span>
+							</div>
+						</button>
+						<button id="vanilla1344-count2" class="bare-button p-2 reaction-tab color-00000099" role="tab" aria-selected="false" onclick="tabSelection(this.id)">
+							<div class="d-flex ai-center">
+								<span class="d-flex">
+									<img src="./assets/like.svg" width="24" height="24"/>
+								</span>
+								<span class="m-l-025 font-SSP-14 fw-600">
+									121
+								</span>
+							</div>
+						</button>
+						<button id="vanilla1344-count3" class="bare-button p-2 reaction-tab color-00000099" role="tab" aria-selected="false" onclick="tabSelection(this.id)">
+							<div class="d-flex ai-center">
+								<span class="d-flex">
+									<img src="./assets/empathy.svg"  width="24" height="24"/>
+								</span>
+								<span class="m-l-025 font-SSP-14 fw-600">
+									131
+								</span>
+							</div>
+						</button>
+						<button id="vanilla1344-count4" class="bare-button p-2 reaction-tab color-00000099" role="tab" aria-selected="false" onclick="tabSelection(this.id)">
+							<div class="d-flex ai-center">
+								<span class="d-flex">
+									<img src="./assets/interest.svg"  width="24" height="24"/>
+								</span>
+								<span class="m-l-025 font-SSP-14 fw-600">
+									453
+								</span>
+							</div>
+						</button>
+						<button id="vanilla1344-count5" class="bare-button p-2 reaction-tab color-00000099" role="tab" aria-selected="false" onclick="tabSelection(this.id)">
+							<div class="d-flex ai-center">
+								<span class="d-flex">
+									<img src="./assets/praise.svg" width="24" height="24"/>
+								</span>
+								<span class="m-l-025 font-SSP-14 fw-600">
+									233
+								</span>
+							</div>
+						</button>
+					</div>
+				</nav>
+			</header>
+			<main id="vanilla1345" class="reaction-list-container" onscroll="onScroll()">
+				<!-- Here the content is displayed based on the tab selected in the navigation  -->
+				<!-- Implement Infinite Scroll  -->
+				<div class="p-t-2 p-b-2 p-l-3 p-r-3">
+					<div>
+						<ul id="vanilla1346-reactionList" class="plain-ul reaction-list">
+						</ul>
+					</div>
+				</div>
+			</main>
+		</div>
+	</section>
+	<!-- <section id="app-loader">
+		<span>
+			<div id="vanilla5664" class="feed-loader feed-loader--empty artdeco-loader artdeco-loader--small ember-view">
+				<span class="artdeco-loader__bars"></span>
+				<span class="artdeco-loader__bars"></span>
+				<span class="artdeco-loader__bars"></span>
+				<span class="artdeco-loader__bars"></span>
+				<span class="artdeco-loader__bars"></span>
+				<span class="artdeco-loader__bars"></span>
+				<span class="artdeco-loader__bars"></span>
+				<span class="artdeco-loader__bars"></span>
+				<span class="artdeco-loader__bars"></span>
+				<span class="artdeco-loader__bars"></span>
+				<span class="artdeco-loader__bars"></span>
+				<span class="artdeco-loader__bars"></span>
+			</div>
+		</span>
+	</section> -->
+	<!-- <section id="reactions-popup-container" class="d-flex jc-center">
+		<div id="emojiModalID" class="emoji-modal emoji-box-shadow">
+			<main class="p-2">
+				<button>
+					<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" id="like-creation-large" data-supported-dps="48x48">
+						<g>
+						  <path fill="none" d="M0 0h48v48H0z"/>
+						  <path d="M25.39 22H10.13c-2 0-3.2 2.11-3.12 3.92a3.23 3.23 0 003.3 3h.57a2.75 2.75 0 00-2.69 2.84 2.84 2.84 0 002.62 2.83 2.83 2.83 0 001.18 5 2.9 2.9 0 00-.29 2 3 3 0 003 2.24h8.18a13.06 13.06 0 003.17-.41l5.13-1.5c.3-.09 4.74 0 6.74 0 3.57-.14 4.53-16.52 0-16.52 0 0-1.65.06-2 0-.16 0-.52-.68-1.41-1.64l-.08-.1c-1.3-1.41-2.78-3.23-3.82-4.26-2.53-2.48-4.63-4.61-6.09-7.84C23.8 9.83 23.71 9 22 9a2.77 2.77 0 00-2.38 2.9 27.06 27.06 0 00.38 2.85c.63 3.38 3.43 7.08 3.51 7.25" fill="#378fe9"/>
+						  <path d="M23.49 23H10.13c-2 0-3.21 1.19-3.13 3a3.22 3.22 0 003.31 3h.57a2.77 2.77 0 00-2.69 2.84 2.84 2.84 0 002.62 2.83v0a2.83 2.83 0 001.18 5 2.9 2.9 0 00-.29 2 3 3 0 003 2.24h8.18a13.06 13.06 0 003.17-.41l5.13-1.5c.3-.09 4.74 0 6.74 0 3.57-.14 4.53-16.52 0-16.52 0 0-1.65.06-2 0-.16 0-.52-.68-1.41-1.64l-.08-.1c-1.3-1.41-2.78-3.23-3.82-4.26-2.53-2.48-4.63-4.6-6.09-7.84C23.8 9.87 23.71 9 22 9a2.66 2.66 0 00-2.38 2.9 27.06 27.06 0 00.38 2.85c.63 3.38 3.43 8 3.51 8.21z" fill="none" stroke="#004182" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+						</g>
+					  </svg>
+				</button>
+				<button>
+					<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" id="praise-creation-large" data-supported-dps="48x48">
+						<g>
+						  <path fill="none" d="M0 0h48v48H0z"/>
+						  <path d="M39.33 30.67l-1.6-1.2s-.66-6.35-1.82-7.58c-2.09-2.2-3.42-5.42-4.3-8.46-.55-1.88-.94-2.55-2.63-2.58a2.57 2.57 0 00-2.31 2.84 21.76 21.76 0 00.23 2.55 34.79 34.79 0 002 6.54l-.65-.39-15.44-11.74c-1.15-.87-2.81-1.26-3.93.24s-.22 2.89.93 3.75l8 6 2.39 1.81-12.79-9.61c-1.15-.87-2.81-1.26-3.94.24s-.21 2.92.93 3.75l8 6 4.8 3.6-10.4-7.79c-1.15-.87-2.81-1.26-3.94.24s-.21 2.89.94 3.75l8 6 4 3-8-6c-1.15-.87-2.78-1.29-3.86.14s-.29 3 .86 3.86l14.54 11a9.77 9.77 0 007.41 1.8c.81.59 2.4 1.8 2.4 1.8a27.46 27.46 0 005.59-5.8 41 41 0 004.59-7.76z" fill="#49992a"/>
+						  <path d="M29.73 23.48l-2.41-1.81" fill="#93d870"/>
+						  <path d="M39.21 31l.12-.28" fill="none" stroke="#43722b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+						  <path d="M37.6 28.4c-.25-1.87-.41-7.47-1.27-8.38-2.09-2.21-3.84-3.55-4.72-6.59-.55-1.88-.94-2.55-2.63-2.58a2.57 2.57 0 00-2.31 2.84 21.76 21.76 0 00.23 2.55 43.79 43.79 0 002 6.92L12.81 11c-1.15-.86-2.81-1.25-3.93.25s-.22 2.88.93 3.75l8 6 2.39 1.8-12.79-9.59c-1.15-.86-2.81-1.25-3.94.25s-.21 2.88.93 3.75l8 6 4.8 3.61L6.8 19c-1.15-.86-2.81-1.25-3.94.25s-.21 2.89.94 3.75l8 6 4 3-8-6c-1.15-.86-2.78-1.29-3.86.15s-.29 3 .86 3.85l14.53 10.68a9.77 9.77 0 007.41 1.8" fill="none" stroke="#165209" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+						  <path d="M29.73 23.48l-2.41-1.81" fill="none" stroke="#43722b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+						  <path d="M45.93 31.87l-1.6-1.2s-.66-6.36-1.82-7.58a21 21 0 01-4.3-8.46c-.55-1.88-.94-2.55-2.63-2.58a2.56 2.56 0 00-2.31 2.83 21.76 21.76 0 00.23 2.55c.63 3.3 1.31 6 1.39 6.16l-15.24-11.4c-1.15-.87-2.81-1.26-3.94.24s-.22 2.89.93 3.75l8 6L27 24l-12.76-9.62c-1.15-.86-2.81-1.25-3.93.25s-.22 2.88.93 3.75l8 6L24 28l-10.36-7.82c-1.15-.87-2.82-1.25-3.94.24s-.22 2.89.93 3.76l8 6 4 3-8-6c-1.15-.86-2.79-1.29-3.87.15s-.29 3 .86 3.85l14.31 10.7c2.53 1.87 7.07 2.12 7 2.12a21.45 21.45 0 002.81 1.47A11.38 11.38 0 0042.93 41a17 17 0 003-9.13z" fill="#6dae4f"/>
+						  <path d="M36.33 24.67l-2.41-1.8" fill="#93d870"/>
+						  <path d="M12 1.65l.79 3.52M23.2 6l-2.94 2M18.68 1l-2.15 5.6M45.77 31.88a7.5 7.5 0 01-1.62-2.66c-.18-.75-.23-1.53-.37-2.29-.22-1.17-.41-2.93-1.27-3.84a21 21 0 01-4.3-8.46c-.55-1.88-.94-2.55-2.63-2.58a2.56 2.56 0 00-2.31 2.83 21.76 21.76 0 00.23 2.55c.63 3.3 1.31 6 1.39 6.16l-15.24-11.4c-1.15-.87-2.81-1.26-3.94.24s-.22 2.89.93 3.75l8 6L27 24l-12.76-9.62c-1.15-.86-2.81-1.25-3.93.25s-.22 2.88.93 3.75l8 6L24 28l-10.36-7.82c-1.15-.87-2.82-1.25-3.94.24s-.22 2.89.93 3.76l8 6 4 3-8-6c-1.15-.86-2.79-1.29-3.87.15s-.29 3 .86 3.85l14.31 10.7a9.65 9.65 0 004 1.75c.64.12 1.32.18 2.07.32a9.93 9.93 0 013.08 1 3 3 0 002.15.17 13.23 13.23 0 006.26-4.59 12.75 12.75 0 002.48-7 2.92 2.92 0 00-.2-1.65z" fill="none" stroke="#165209" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+						</g>
+					  </svg>					  
+				</button>
+				<button>
+					<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" id="support-creation-large" data-supported-dps="48x48">
+						<path d="M14 32h-.69c-.79-.29-4.82-1.83-7.53-2.59a.86.86 0 01-.63-.73 2.4 2.4 0 01.37-1.77 1.4 1.4 0 011.19-.58 2.06 2.06 0 01.7.12 5.71 5.71 0 011.49.87l.19.15 1.25.87c.46.33.87.61 1.16.83l2.92 1.19c.39.18 2 .92 2 1.34s-1.86.37-2.25.38z" fill="#9983b1"/>
+						<path d="M42.75 44.52a74.76 74.76 0 01-11.84-1.23h-.21a67.24 67.24 0 01-8.77-1.82c-2.56-.77-5.08-1.77-7.52-2.73l-1.09-.43c-2.31-.9-4.19-1.66-5.9-2.39l-.64-.27a24.09 24.09 0 01-3-1.41c-1.33-.78-1.74-1.78-1.19-3v-.09a1.93 1.93 0 012-1.15h.11a5.61 5.61 0 01.58 0c2.12.23 8.27 2.57 9.48 3l4 .14h.1l9 .31c-.7-.64-2.45-1.75-6.75-2.86-.82-.21-1.56-.45-1.73-1a2.38 2.38 0 01.78-2.54 3.18 3.18 0 011.84-.42 9.74 9.74 0 012.28.27c.46.12.83.24 1.19.35a13.5 13.5 0 002.88.65A31 31 0 0133 29c5 1.36 6 3.87 6.59 5.38-.19-.62 0-.16.1-.39l.14-.2h.77c.86 0 2.5-.09 2.51-.09a.85.85 0 01.85.63c1.71 6.23-.64 9.69-.74 9.83a.66.66 0 01-.48.33z" fill="#bba9d1"/>
+						<path d="M14.63 11.35a5 5 0 00-7.13-.09l-.09.09a5.24 5.24 0 000 7.34l7.79 7.9 7.8-7.9a5.24 5.24 0 000-7.34 5.06 5.06 0 00-3.61-1.53 5 5 0 00-3.6 1.53l-.57.58z" fill="#df704d" fill-rule="evenodd"/>
+						<path d="M43.65 34.32a7.14 7.14 0 011.48 5 10.7 10.7 0 01-2.28 5.29c-.41.4-15.19-1.48-18.65-2.16S4.05 34.43 3.41 34s-.7-3.12 1.13-3.69 5.86 2.15 9.53 2.75a105.12 105.12 0 0012.68.94c2.48 0-2.68-2.16-3.9-2.64s-3.2-.87-3.61-2.16.92-2.24 2-2.24a30.41 30.41 0 015.89 1.48A19.6 19.6 0 0135 29.83a9.16 9.16 0 014.67 4.49c.33.68 3.62-.32 3.98 0z" fill="none" stroke="#493d57" stroke-width="2"/>
+						<path d="M5.47 30.17c-.93-2 .22-3.17 1.58-3.17s2.4 1.48 4.37 2.83a74.82 74.82 0 006.89 3.87" fill="none" stroke="#493d57" stroke-width="2"/>
+						<path d="M14.36 10.63a5.48 5.48 0 00-7.74.06 5.63 5.63 0 00-.08 7.83L15 27l8.43-8.49a5.62 5.62 0 001.52-4.86 5.54 5.54 0 00-3-4.08A5.22 5.22 0 0019.49 9a5.48 5.48 0 00-3.88 1.65l-.64.61z" fill="none" stroke="#77280c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+						<path fill="none" d="M0 0h48v48H0z"/>
+					  </svg>
+				</button>
+				<button>
+					  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" id="empathy-creation-large" data-supported-dps="48x48">
+						<g>
+						  <path fill="none" d="M0 0h48v48H0z"/>
+						  <path d="M22.9 14.9a9.91 9.91 0 10-14 14L24 44l15.1-15.07a10 10 0 00-2.67-16 9.55 9.55 0 00-4.33-1 9.84 9.84 0 00-7 2.93L24 16z" fill="#df704d" fill-rule="evenodd"/>
+						  <path d="M22.9 14.88a9.88 9.88 0 00-14 13.94L24 43.8l15.1-15A9.86 9.86 0 0036.43 13a9.55 9.55 0 00-4.33-1h0a9.83 9.83 0 00-7 2.92L24 16z" fill="none" stroke="#77280c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+						</g>
+					  </svg>
+				</button>
+				<button>
+					<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" id="interest-creation-large" data-supported-dps="48x48">
+						<g>
+						  <path fill="none" d="M0 0h48v48H0z"/>
+						  <path d="M27 44h-6a2 2 0 01-2-2v-5h10v5a2 2 0 01-2 2z" fill="#c07800"/>
+						  <path d="M21 37l8 .07a11.25 11.25 0 01.09-3.57 6.61 6.61 0 01.78-1.63 5.16 5.16 0 01.63-.69l.14-.12A11.75 11.75 0 0035 22.17a11 11 0 00-22 0v.06a11.43 11.43 0 004.13 8.66 10.73 10.73 0 011.77 2.79 9.47 9.47 0 01.8 3.08l.3.24" fill="#f5bb5c"/>
+						  <path d="M12 5.82L14.42 9M36 5.82L33.58 9M24 2v4.77" fill="none" stroke="#5d3b01" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.91"/>
+						  <path d="M27 44h-6a2.21 2.21 0 01-2-2.1V37h10v4.9a2.21 2.21 0 01-2 2.1z" fill="none" stroke="#5d3b01" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+						  <path d="M29 38c0-3.63.41-4.47.41-4.47a6.34 6.34 0 011.89-3 12.84 12.84 0 001.28-1.38 11.86 11.86 0 001.81-3.24 11.39 11.39 0 00.65-3.7v-.06A11.1 11.1 0 0024 11h0a11.09 11.09 0 00-11 11.17v.06a11.39 11.39 0 00.65 3.7 11.86 11.86 0 001.81 3.24 12.84 12.84 0 001.28 1.38 6.34 6.34 0 011.89 3s.37.84.37 4.45" fill="none" stroke="#5d3b01" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+						</g>
+					  </svg>
+				</button>
+				<button>
+					<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+						<circle cx="24" cy="27" r="18" style="fill: #79deee; stroke: #104e58; stroke-width: 2px;"/>
+						<path d="M21.68,22.33c-2.58-2.25-6.55-1.7-8.43,1.16l-.22,.33,.82,.84,.47-.29c2.04-1.26,4.5-1.62,6.81-1.01l.55-1.03Z" style="fill: #104e58;"/>
+						<path d="M26.68,22.06l-.32,.24,.5,1.07c2.5-.59,5.14-.12,7.29,1.29l.85-.79c-1.66-3-5.57-3.84-8.32-1.8Z" style="fill: #104e58;"/>
+						<path d="M29,16.08c1.11-.07,3.66,.25,5,2.12" style="fill: none; stroke: #104e58; stroke-linecap: round; stroke-width: 2px;"/>
+						<path d="M18,16.08c-1.11-.07-3.66,.25-5,2.12" style="fill: none; stroke: #104e58; stroke-linecap: round; stroke-width: 2px;"/>
+						<path d="M32.59,29.5H15.41c-.69,0-1.18,.68-.93,1.32,1.2,3.16,3.56,7.68,9.53,7.68s8.33-4.52,9.53-7.68c.24-.64-.24-1.32-.93-1.32Z" style="fill: #13707e;"/>
+						<path d="M24.01,33.5c-3.89,0-6.88,1.8-4.87,3.5,1.03,.87,2.86,1.53,4.87,1.5,1.51-.02,3.49-.44,4.87-1.5,1.95-1.5-.97-3.5-4.87-3.5Z" style="fill: #aef0fa;"/>
+						<path d="M32.43,28H15.57c-1.67,0-2.95,1.66-2.33,3.31,1.34,3.52,4.09,8.69,10.76,8.69s9.42-5.17,10.76-8.69c.63-1.65-.65-3.31-2.33-3.31Zm-8.43,10c-5.3,0-7.6-3.99-8.89-7.4-.1-.26,.09-.6,.46-.6h16.86c.37,0,.56,.34,.46,.6-1.29,3.41-3.59,7.4-8.89,7.4Z" style="fill: #104e58;"/>
+					</svg>
+				</button>
+			</main>
+		</div>
+	</section> -->
+	<!-- <button class="bare-button p-075">
+							<div class="d-flex ai-center">
+								<span>
+									<img src="./assets/praise.svg" width="24" height="24"/>
+								</span>
+								<span>
+									233
+								</span>
+							</div>
+						</button>
+						<button class="bare-button p-2">
+							<div class="d-flex ai-center">
+								<span>
+									<img src="./assets/funny.svg" width="24" height="24"/>
+								</span>
+								<span>
+									233
+								</span>
+							</div>
+						</button>
+						<button class="bare-button p-2">
+							<div class="d-flex ai-center">
+								<span>
+									<img src="./assets/appreciation.svg" width="24" height="24"/>
+								</span>
+								<span>
+									121
+								</span>
+							</div>
+						</button> -->
+	<script src="script.js"></script>
+</body>
+</html>
+
+<!-- <li class="reaction-list-item list-item d-flex p-1 p-t-0">
+	<div class="d-flex">
+		<div class="pos-rel">
+			<div class="reaction-list-profile d-flex">
+				<img src="./assets/ryan_roslanky.jpeg" class="br-50" alt height="56" width="56" loading="lazy" />
+			</div>
+			<img src="./assets/laugh-smallIcon.svg" width="16" height="16" class="reaction-icon-small br-50">
+		</div>
+		<div class="m-l-1 d-flex flex-column jc-center">
+			<p class="profile-name font-SSP-16 fw-600 color-000000E6">Ryan Roslansky <span class="font-SSP-14 fw-600 color-00000099"> ·&nbsp; 1st </span> </p>
+			<p class="profile-desig font-SSP-14 color-00000099">Graduando de Licenciatura em Ciências Biológicas e bolsista FAPESP em bioinformática.</p>
+		</div>
+	</div>
+</li>
+<li class="reaction-list-item list-item p-1">
+	<div class="d-flex">
+		<div class="pos-rel">
+			<div class="reaction-list-profile d-flex">
+				<img src="./assets/daniel_rodriguez.jpeg" class="br-50" alt height="56" width="56" loading="lazy" />
+			</div>
+			<img src="./assets/celebrate-smallIcon.svg" width="16" height="16" class="reaction-icon-small br-50">
+		</div>
+		<div class="m-l-1 d-flex flex-column jc-center">
+			<p class="profile-name font-SSP-16 fw-600 color-000000E6">Daniel Rodríguez Estévez  <span class="font-SSP-14 fw-600 color-00000099"> ·&nbsp; 2nd+ </span> </p>
+			<p class="profile-desig font-SSP-14 color-00000099">Graduate Research Assistant at Createc</p>
+		</div>
+	</div>
+</li>
+<li class="reaction-list-item list-item d-flex p-1">
+	<div class="d-flex">
+		<div class="pos-rel">
+			<div class="reaction-list-profile d-flex">
+				<img src="./assets/tang_zhang.jpeg" class="br-50" alt height="56" width="56" loading="lazy" />
+			</div>
+			<img src="./assets/empathy-smallIcon.svg" width="16" height="16" class="reaction-icon-small br-50">
+		</div>
+		<div class="m-l-1 d-flex flex-column jc-center">
+			<p class="profile-name font-SSP-16 fw-600 color-000000E6">Tang Zhang <span class="font-SSP-14 fw-600 color-00000099"> ·&nbsp; 3rd+ </span> </p>
+			<p class="profile-desig font-SSP-14 color-00000099">Graduando de Licenciatura em Ciências Biológicas e bolsista FAPESP em bioinformática.</p>
+		</div>
+	</div>
+</li>
+<li class="reaction-list-item list-item d-flex p-1">
+	<div class="d-flex">
+		<div class="pos-rel">
+			<div class="reaction-list-noprofile">
+			</div>
+			<img src="./assets/like-smallIcon.svg" width="16" height="16" class="reaction-icon-small br-50">
+		</div>
+		<div class="m-l-1 d-flex flex-column jc-center">
+			<p class="profile-name font-SSP-16 fw-600 color-000000E6">Yash Sharma 🎯 <span class="font-SSP-14 fw-600 color-00000099"> ·&nbsp; 3rd+ </span></p>
+			<p class="profile-desig font-SSP-14 color-00000099">Developer @TCS (Digital) | Ex-Cognizant</p>
+		</div>
+	</div>
+</li>
+<li class="reaction-list-item list-item d-flex p-1">
+	<div class="d-flex">
+		<div class="pos-rel">
+			<div class="reaction-list-noprofile">
+			</div>
+			<img src="./assets/like-smallIcon.svg" width="16" height="16" class="reaction-icon-small br-50">
+		</div>
+		<div class="m-l-1 d-flex flex-column jc-center">
+			<p class="profile-name font-SSP-16 fw-600 color-000000E6">Daniel Dubov 🎯 <span class="font-SSP-14 fw-600 color-00000099"> ·&nbsp; 3rd+ </span></p>
+			<p class="profile-desig font-SSP-14 color-00000099">Developer @TCS (Digital) | Ex-Cognizant</p>
+		</div>
+	</div>
+</li>
+<li class="reaction-list-item list-item d-flex p-1">
+	<div class="d-flex">
+		<div class="pos-rel">
+			<div class="reaction-list-noprofile">
+			</div>
+			<img src="./assets/like-smallIcon.svg" width="16" height="16" class="reaction-icon-small br-50">
+		</div>
+		<div class="m-l-1 d-flex flex-column jc-center">
+			<p class="profile-name font-SSP-16 fw-600 color-000000E6">Magnus Karlsen 🎯 <span class="font-SSP-14 fw-600 color-00000099"> ·&nbsp; 3rd+ </span></p>
+			<p class="profile-desig font-SSP-14 color-00000099">Developer @TCS (Digital) | Ex-Cognizant</p>
+		</div>
+	</div>
+</li>
+<li class="reaction-list-item list-item p-1">
+	<div class="d-flex">
+		<div class="pos-rel">
+			<div class="reaction-list-profile d-flex">
+				<img src="./assets/daniel_rodriguez.jpeg" class="br-50" alt height="56" width="56" loading="lazy" />
+			</div>
+			<img src="./assets/celebrate-smallIcon.svg" width="16" height="16" class="reaction-icon-small br-50">
+		</div>
+		<div class="m-l-1 d-flex flex-column jc-center">
+			<p class="profile-name font-SSP-16 fw-600 color-000000E6">Daniel Rodríguez Estévez  <span class="font-SSP-14 fw-600 color-00000099"> ·&nbsp; 2nd+ </span> </p>
+			<p class="profile-desig font-SSP-14 color-00000099">Graduate Research Assistant at Createc</p>
+		</div>
+	</div>
+</li>
+<li class="reaction-list-item list-item d-flex p-1">
+	<div class="d-flex">
+		<div class="pos-rel">
+			<div class="reaction-list-profile d-flex">
+				<img src="./assets/ryan_roslanky.jpeg" class="br-50" alt height="56" width="56" loading="lazy" />
+			</div>
+			<img src="./assets/laugh-smallIcon.svg" width="16" height="16" class="reaction-icon-small br-50">
+		</div>
+		<div class="m-l-1 d-flex flex-column jc-center">
+			<p class="profile-name font-SSP-16 fw-600 color-000000E6">Ryan Roslansky <span class="font-SSP-14 fw-600 color-00000099"> ·&nbsp; 1st </span> </p>
+			<p class="profile-desig font-SSP-14 color-00000099">Graduando de Licenciatura em Ciências Biológicas e bolsista FAPESP em bioinformática.</p>
+		</div>
+	</div>
+</li>
+<li class="reaction-list-item list-item d-flex p-1">
+	<div class="d-flex">
+		<div class="pos-rel">
+			<div class="reaction-list-profile d-flex">
+				<img src="./assets/tang_zhang.jpeg" class="br-50" alt height="56" width="56" loading="lazy" />
+			</div>
+			<img src="./assets/empathy-smallIcon.svg" width="16" height="16" class="reaction-icon-small br-50">
+		</div>
+		<div class="m-l-1 d-flex flex-column jc-center">
+			<p class="profile-name font-SSP-16 fw-600 color-000000E6">Tang Zhang <span class="font-SSP-14 fw-600 color-00000099"> ·&nbsp; 3rd+ </span> </p>
+			<p class="profile-desig font-SSP-14 color-00000099">Graduando de Licenciatura em Ciências Biológicas e bolsista FAPESP em bioinformática.</p>
+		</div>
+	</div>
+</li> -->

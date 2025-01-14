@@ -1,0 +1,8 @@
+
+################# POINTS TO NOTE ########################
+
+Clicking on parent comment Reply button - Creates the nested reply. But creating on nested reply button does not create the nested reply, though it mention the person's name in the nested reply comment text-box
+Load More Comments loads 10 records 
+"Load More Replies"
+Load Previous Replies
+Ordering of emojis is based on the count of reactions of that emoji
